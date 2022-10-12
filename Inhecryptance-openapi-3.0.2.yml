@@ -47,6 +47,31 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/IcrB'
+    IcrC:
+      type: object
+      properties:
+        icrCFieldC1:
+          description: Field C1
+          type: string
+        icrAFieldA4:
+          description: Field A4
+          type: string
+        row_id:
+          description: Unique technical row ID
+          type: string
+        icrAFieldA1:
+          description: Field A1
+          type: string
+        icrAFieldA2:
+          description: Field A2
+          type: string
+        icrAFieldA3:
+          description: Field A3
+          type: string
+    ArrayOfIcrC:
+      type: array
+      items:
+        $ref: '#/components/schemas/IcrC'
     PublicationResult:
       type: object
       properties:
@@ -110,6 +135,34 @@ components:
         name:
           description: Name
           type: string
+    IcrD:
+      type: object
+      properties:
+        icrAFieldA4:
+          description: Field A4
+          type: string
+        icrDFieldD1:
+          description: Field D1
+          type: string
+        row_id:
+          description: Unique technical row ID
+          type: string
+        icrDFieldD2:
+          description: Field D2
+          type: string
+        icrAFieldA1:
+          description: Field A1
+          type: string
+        icrAFieldA2:
+          description: Field A2
+          type: string
+        icrAFieldA3:
+          description: Field A3
+          type: string
+    ArrayOfIcrD:
+      type: array
+      items:
+        $ref: '#/components/schemas/IcrD'
     ActionResult:
       type: object
       properties:
@@ -207,6 +260,201 @@ paths:
         required: false
       tags:
       - session
+  /rest/IcrC/{row_id}:
+    post:
+      summary: Create a new IcrCbusiness object record
+      security:
+      - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IcrC'
+      operationId: obj-icrc-create
+      responses:
+        '200':
+          description: Success in creating a new business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IcrC'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - IcrC
+    get:
+      summary: Get a IcrC business object record
+      security:
+      - bearerAuth: []
+      operationId: obj-icrc-get
+      responses:
+        '200':
+          description: Success in getting a single business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IcrC'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+      tags:
+      - IcrC
+    delete:
+      summary: Delete a IcrC business object record
+      security:
+      - bearerAuth: []
+      operationId: obj-icrc-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+          content:
+            application/json: {}
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - IcrC
+    put:
+      summary: Update a IcrCbusiness object record
+      security:
+      - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IcrC'
+      operationId: obj-icrc-update
+      responses:
+        '200':
+          description: Success in updating a business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IcrC'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - IcrC
   /rest/IcrB/{row_id}:
     post:
       summary: Create a new IcrBbusiness object record
@@ -402,6 +650,83 @@ paths:
         required: true
       tags:
       - IcrB
+  /rest/IcrC:
+    get:
+      summary: Search IcrC business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      operationId: obj-icrc-search
+      responses:
+        '200':
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfIcrC'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: icrCFieldC1
+        description: Search filter for Field C1
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: icrAFieldA1
+        description: Search filter for Field A1
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: icrAFieldA2
+        description: Search filter for Field A2
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: icrAFieldA3
+        description: Search filter for Field A3
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: icrAFieldA4
+        description: Search filter for Field A4
+        required: false
+      tags:
+      - IcrC
   /logout:
     get:
       summary: Logout (revoke bearer token)
@@ -776,6 +1101,284 @@ paths:
         required: true
       tags:
       - IcrA
+  /rest/IcrD:
+    get:
+      summary: Search IcrD business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      operationId: obj-icrd-search
+      responses:
+        '200':
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfIcrD'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: icrDFieldD1
+        description: Search filter for Field D1
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: icrAFieldA1
+        description: Search filter for Field A1
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: icrDFieldD2
+        description: Search filter for Field D2
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: icrAFieldA2
+        description: Search filter for Field A2
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: icrAFieldA3
+        description: Search filter for Field A3
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: icrAFieldA4
+        description: Search filter for Field A4
+        required: false
+      tags:
+      - IcrD
+  /rest/IcrD/{row_id}:
+    post:
+      summary: Create a new IcrDbusiness object record
+      security:
+      - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IcrD'
+      operationId: obj-icrd-create
+      responses:
+        '200':
+          description: Success in creating a new business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IcrD'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - IcrD
+    get:
+      summary: Get a IcrD business object record
+      security:
+      - bearerAuth: []
+      operationId: obj-icrd-get
+      responses:
+        '200':
+          description: Success in getting a single business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IcrD'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+      tags:
+      - IcrD
+    delete:
+      summary: Delete a IcrD business object record
+      security:
+      - bearerAuth: []
+      operationId: obj-icrd-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+          content:
+            application/json: {}
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - IcrD
+    put:
+      summary: Update a IcrDbusiness object record
+      security:
+      - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IcrD'
+      operationId: obj-icrd-update
+      responses:
+        '200':
+          description: Success in updating a business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IcrD'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - IcrD
   /:
     get:
       summary: Get user session information
@@ -818,3 +1421,7 @@ tags:
   description: IcrA
 - name: IcrB
   description: IcrB
+- name: IcrC
+  description: IcrC
+- name: IcrD
+  description: IcrD

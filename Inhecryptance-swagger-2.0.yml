@@ -32,6 +32,168 @@ paths:
         - token
       tags:
       - session
+  /rest/IcrC/{row_id}:
+    post:
+      summary: Create a new IcrCbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-icrc-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/IcrC'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/IcrC'
+        in: body
+        name: body
+      tags:
+      - IcrC
+      consumes:
+      - application/json
+    get:
+      summary: Get a IcrC business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-icrc-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/IcrC'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - IcrC
+    delete:
+      summary: Delete a IcrC business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-icrc-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - IcrC
+    put:
+      summary: Update a IcrCbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-icrc-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/IcrC'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/IcrC'
+        in: body
+        name: body
+      tags:
+      - IcrC
+      consumes:
+      - application/json
   /rest/IcrB/{row_id}:
     post:
       summary: Create a new IcrBbusiness object record
@@ -194,6 +356,71 @@ paths:
       - IcrB
       consumes:
       - application/json
+  /rest/IcrC:
+    get:
+      summary: Search IcrC business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-icrc-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfIcrC'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: icrCFieldC1
+        description: Search filter for Field C1
+        type: string
+        required: false
+      - in: query
+        name: icrAFieldA1
+        description: Search filter for Field A1
+        type: string
+        required: false
+      - in: query
+        name: icrAFieldA2
+        description: Search filter for Field A2
+        type: string
+        required: false
+      - in: query
+        name: icrAFieldA3
+        description: Search filter for Field A3
+        type: string
+        required: false
+      - in: query
+        name: icrAFieldA4
+        description: Search filter for Field A4
+        type: string
+        required: false
+      tags:
+      - IcrC
   /logout:
     get:
       summary: Logout (revoke bearer token)
@@ -508,6 +735,238 @@ paths:
       - IcrA
       consumes:
       - application/json
+  /rest/IcrD:
+    get:
+      summary: Search IcrD business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-icrd-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfIcrD'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: icrDFieldD1
+        description: Search filter for Field D1
+        type: string
+        required: false
+      - in: query
+        name: icrAFieldA1
+        description: Search filter for Field A1
+        type: string
+        required: false
+      - in: query
+        name: icrDFieldD2
+        description: Search filter for Field D2
+        type: string
+        required: false
+      - in: query
+        name: icrAFieldA2
+        description: Search filter for Field A2
+        type: string
+        required: false
+      - in: query
+        name: icrAFieldA3
+        description: Search filter for Field A3
+        type: string
+        required: false
+      - in: query
+        name: icrAFieldA4
+        description: Search filter for Field A4
+        type: string
+        required: false
+      tags:
+      - IcrD
+  /rest/IcrD/{row_id}:
+    post:
+      summary: Create a new IcrDbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-icrd-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/IcrD'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/IcrD'
+        in: body
+        name: body
+      tags:
+      - IcrD
+      consumes:
+      - application/json
+    get:
+      summary: Get a IcrD business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-icrd-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/IcrD'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - IcrD
+    delete:
+      summary: Delete a IcrD business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-icrd-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - IcrD
+    put:
+      summary: Update a IcrDbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-icrd-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/IcrD'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/IcrD'
+        in: body
+        name: body
+      tags:
+      - IcrD
+      consumes:
+      - application/json
   /:
     get:
       summary: Get user session information
@@ -581,6 +1040,31 @@ definitions:
     type: array
     items:
       $ref: '#/definitions/IcrB'
+  IcrC:
+    type: object
+    properties:
+      icrCFieldC1:
+        description: Field C1
+        type: string
+      icrAFieldA4:
+        description: Field A4
+        type: string
+      row_id:
+        description: Unique technical row ID
+        type: string
+      icrAFieldA1:
+        description: Field A1
+        type: string
+      icrAFieldA2:
+        description: Field A2
+        type: string
+      icrAFieldA3:
+        description: Field A3
+        type: string
+  ArrayOfIcrC:
+    type: array
+    items:
+      $ref: '#/definitions/IcrC'
   PublicationResult:
     type: object
     properties:
@@ -644,6 +1128,34 @@ definitions:
       name:
         description: Name
         type: string
+  IcrD:
+    type: object
+    properties:
+      icrAFieldA4:
+        description: Field A4
+        type: string
+      icrDFieldD1:
+        description: Field D1
+        type: string
+      row_id:
+        description: Unique technical row ID
+        type: string
+      icrDFieldD2:
+        description: Field D2
+        type: string
+      icrAFieldA1:
+        description: Field A1
+        type: string
+      icrAFieldA2:
+        description: Field A2
+        type: string
+      icrAFieldA3:
+        description: Field A3
+        type: string
+  ArrayOfIcrD:
+    type: array
+    items:
+      $ref: '#/definitions/IcrD'
   ActionResult:
     type: object
     properties:
@@ -717,3 +1229,7 @@ tags:
   description: IcrA
 - name: IcrB
   description: IcrB
+- name: IcrC
+  description: IcrC
+- name: IcrD
+  description: IcrD
