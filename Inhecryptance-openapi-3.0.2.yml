@@ -16,18 +16,37 @@ components:
           type: integer
           enum:
           - 404
-    ActionResult:
+    IcrB:
       type: object
       properties:
-        result:
-          description: Action result
+        icrBFieldB1:
+          description: Field B1
           type: string
-    TreeviewData:
-      type: object
-      properties:
-        item:
-          description: Object item with lists of linked objects' items
-          type: object
+        icrAFieldA4:
+          description: Field A4
+          type: string
+        row_id:
+          description: Unique technical row ID
+          type: string
+        icrBFieldB3:
+          description: Field B3
+          type: string
+        icrAFieldA1:
+          description: Field A1
+          type: string
+        icrBFieldB2:
+          description: Field B2
+          type: string
+        icrAFieldA2:
+          description: Field A2
+          type: string
+        icrAFieldA3:
+          description: Field A3
+          type: string
+    ArrayOfIcrB:
+      type: array
+      items:
+        $ref: '#/components/schemas/IcrB'
     PublicationResult:
       type: object
       properties:
@@ -80,6 +99,29 @@ components:
         label3:
           description: 'Label #3'
           type: string
+    PlaceMapData:
+      type: object
+      properties:
+        places:
+          description: Places
+          type: array
+          items:
+            $ref: '#/components/schemas/PlaceData'
+        name:
+          description: Name
+          type: string
+    ActionResult:
+      type: object
+      properties:
+        result:
+          description: Action result
+          type: string
+    TreeviewData:
+      type: object
+      properties:
+        item:
+          description: Object item with lists of linked objects' items
+          type: object
     Error400:
       type: object
       properties:
@@ -113,17 +155,6 @@ components:
           type: integer
           enum:
           - 500
-    PlaceMapData:
-      type: object
-      properties:
-        places:
-          description: Places
-          type: array
-          items:
-            $ref: '#/components/schemas/PlaceData'
-        name:
-          description: Name
-          type: string
     Error403:
       type: object
       properties:
@@ -176,6 +207,201 @@ paths:
         required: false
       tags:
       - session
+  /rest/IcrB/{row_id}:
+    post:
+      summary: Create a new IcrBbusiness object record
+      security:
+      - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IcrB'
+      operationId: obj-icrb-create
+      responses:
+        '200':
+          description: Success in creating a new business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IcrB'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - IcrB
+    get:
+      summary: Get a IcrB business object record
+      security:
+      - bearerAuth: []
+      operationId: obj-icrb-get
+      responses:
+        '200':
+          description: Success in getting a single business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IcrB'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+      tags:
+      - IcrB
+    delete:
+      summary: Delete a IcrB business object record
+      security:
+      - bearerAuth: []
+      operationId: obj-icrb-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+          content:
+            application/json: {}
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - IcrB
+    put:
+      summary: Update a IcrBbusiness object record
+      security:
+      - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IcrB'
+      operationId: obj-icrb-update
+      responses:
+        '200':
+          description: Success in updating a business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IcrB'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - IcrB
   /logout:
     get:
       summary: Logout (revoke bearer token)
@@ -195,6 +421,95 @@ paths:
                 $ref: '#/components/schemas/Error401'
       tags:
       - session
+  /rest/IcrB:
+    get:
+      summary: Search IcrB business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      operationId: obj-icrb-search
+      responses:
+        '200':
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfIcrB'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: icrBFieldB1
+        description: Search filter for Field B1
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: icrAFieldA1
+        description: Search filter for Field A1
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: icrBFieldB2
+        description: Search filter for Field B2
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: icrAFieldA2
+        description: Search filter for Field A2
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: icrBFieldB3
+        description: Search filter for Field B3
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: icrAFieldA3
+        description: Search filter for Field A3
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: icrAFieldA4
+        description: Search filter for Field A4
+        required: false
+      tags:
+      - IcrB
   /rest/IcrA:
     get:
       summary: Search IcrA business object records or get contextualized metadata
@@ -501,3 +816,5 @@ info:
 tags:
 - name: IcrA
   description: IcrA
+- name: IcrB
+  description: IcrB

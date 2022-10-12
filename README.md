@@ -27,3 +27,16 @@
 | `icrAFieldA3`                                                | char(255)                                |          | yes       | yes      | -                                                                                |
 | `icrAFieldA4`                                                | char(255)                                |          | yes       | yes      | -                                                                                |
 
+`IcrB` business object definition
+---------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `icrBFieldB1`                                                | char(255)                                |          | yes       |          | -                                                                                |
+| `icrBFieldB2`                                                | char(255)                                |          | yes       |          | -                                                                                |
+| `icrBFieldB3`                                                | char(255)                                |          | yes       |          | -                                                                                |
+

@@ -69,634 +69,1135 @@
    "label": "Business objects",
    "icon": "img/system/business_object",
    "field": "row_module_id",
-   "list": [{
-    "object": "ObjectInternal",
-    "userkey": "IcrA",
-    "item": {
-     "obo_name": "IcrA",
-     "obo_dbtable": "icr_a",
-     "obo_role": "OBJ",
-     "obo_class": null,
-     "obo_script_id": {
-      "path": "src/com/simplicite/objects/Inhecryptance/IcrA.java",
-      "size": 343,
-      "field": "obo_script_id",
-      "mime": "text/plain",
-      "name": "IcrA.java",
-      "id": "6554",
-      "object": "ObjectInternal",
-      "rowid": "2002"
+   "list": [
+    {
+     "object": "ObjectInternal",
+     "userkey": "IcrA",
+     "item": {
+      "obo_name": "IcrA",
+      "obo_dbtable": "icr_a",
+      "obo_role": "OBJ",
+      "obo_class": null,
+      "obo_script_id": {
+       "path": "src/com/simplicite/objects/Inhecryptance/IcrA.java",
+       "size": 343,
+       "field": "obo_script_id",
+       "mime": "text/plain",
+       "name": "IcrA.java",
+       "id": "6554",
+       "object": "ObjectInternal",
+       "rowid": "2002"
+      },
+      "obo_usets": "1",
+      "obo_nosearch": "1",
+      "obo_comment": null,
+      "obo_type": "O",
+      "obo_searchspec": null,
+      "obo_delspec": null,
+      "obo_exportorder": null,
+      "obo_distinct": false,
+      "obo_indexable": false,
+      "obo_groupby": false,
+      "obo_dfltref": null,
+      "obo_template_id__tpl_name": "IcrA",
+      "obo_cache": "D",
+      "obo_copy": true,
+      "obo_export": true,
+      "obo_pagine": true,
+      "obo_srh_predef": ["1"],
+      "obo_selrow": true,
+      "obo_updall": true,
+      "obo_delall": true,
+      "obo_listsearch": true,
+      "obo_list_edit": [
+       "N",
+       "L",
+       "E"
+      ],
+      "obo_useform": true,
+      "obo_title": null,
+      "obo_icon": null,
+      "obo_refcount": false,
+      "obo_tree": false,
+      "obo_viewmode": "T",
+      "obo_historic": null,
+      "obo_printable": true,
+      "obo_followlink": true,
+      "obo_mergeable": false,
+      "obo_social": ["1"],
+      "obo_rowid_id__fld_name": null,
+      "obo_extend_id__obj_name": null,
+      "row_module_id__mdl_name": "Inhecryptance",
+      "obo_btn_reload": "P",
+      "obo_btn_prefs": "P",
+      "obo_btn_del": "P",
+      "obo_btn_copy": "P",
+      "obo_btn_export": "P",
+      "obo_btn_listadd": "1",
+      "obo_btn_listedit": "1",
+      "obo_btn_listupsert": "1",
+      "obo_btn_updall": "P",
+      "obo_btn_delall": "P",
+      "obo_btn_merge": "P",
+      "obo_btn_save": true,
+      "obo_btn_saveclose": true,
+      "obo_btn_savenew": true,
+      "obo_btn_savecopy": true,
+      "obo_btn_close": true,
+      "obo_tray": true,
+      "obo_dashboard": true,
+      "obo_prefix": "a",
+      "obo_search_ts": null,
+      "obo_minrows": null,
+      "obo_maxrows": null,
+      "obo_sortable": true,
+      "obo_list_areas": null
      },
-     "obo_usets": "1",
-     "obo_nosearch": "1",
-     "obo_comment": null,
-     "obo_type": "O",
-     "obo_searchspec": null,
-     "obo_delspec": null,
-     "obo_exportorder": null,
-     "obo_distinct": false,
-     "obo_indexable": false,
-     "obo_groupby": false,
-     "obo_dfltref": null,
-     "obo_template_id__tpl_name": "IcrA",
-     "obo_cache": "D",
-     "obo_copy": true,
-     "obo_export": true,
-     "obo_pagine": true,
-     "obo_srh_predef": ["1"],
-     "obo_selrow": true,
-     "obo_updall": true,
-     "obo_delall": true,
-     "obo_listsearch": true,
-     "obo_list_edit": [
-      "N",
-      "L",
-      "E"
-     ],
-     "obo_useform": true,
-     "obo_title": null,
-     "obo_icon": null,
-     "obo_refcount": false,
-     "obo_tree": false,
-     "obo_viewmode": "T",
-     "obo_historic": null,
-     "obo_printable": true,
-     "obo_followlink": true,
-     "obo_mergeable": false,
-     "obo_social": ["1"],
-     "obo_rowid_id__fld_name": null,
-     "obo_extend_id__obj_name": null,
-     "row_module_id__mdl_name": "Inhecryptance",
-     "obo_btn_reload": "P",
-     "obo_btn_prefs": "P",
-     "obo_btn_del": "P",
-     "obo_btn_copy": "P",
-     "obo_btn_export": "P",
-     "obo_btn_listadd": "1",
-     "obo_btn_listedit": "1",
-     "obo_btn_listupsert": "1",
-     "obo_btn_updall": "P",
-     "obo_btn_delall": "P",
-     "obo_btn_merge": "P",
-     "obo_btn_save": true,
-     "obo_btn_saveclose": true,
-     "obo_btn_savenew": true,
-     "obo_btn_savecopy": true,
-     "obo_btn_close": true,
-     "obo_tray": true,
-     "obo_dashboard": true,
-     "obo_prefix": "a",
-     "obo_search_ts": null,
-     "obo_minrows": null,
-     "obo_maxrows": null,
-     "obo_sortable": true,
-     "obo_list_areas": null
-    },
-    "links": [
-     {
-      "object": "ObjectFieldSystem",
-      "label": "Object fields",
-      "icon": "img/system/object_field",
-      "field": "obf_object_id",
-      "list": [
-       {
-        "object": "ObjectFieldSystem",
-        "userkey": "IcrA~icrAFieldA1~10",
-        "item": {
-         "obf_object_id__obo_name": "IcrA",
-         "obf_field_id__fld_name": "icrAFieldA1",
-         "obf_field_id__fld_type": "3",
-         "obf_order": 10,
-         "obf_group_by": null,
-         "obf_dfault_order": 1,
-         "obf_input": null,
-         "obf_ref_field_id__fld_name": null,
-         "obf_ref_object_id__obo_name": null,
-         "obf_cascad": null,
-         "obf_card": null,
-         "obf_visible": null,
-         "obf_ref_export": true,
-         "obf_copy": null,
-         "obf_ref_order": null,
-         "obf_fld_visible": null,
-         "obf_fld_required": null,
-         "obf_fld_updatable": null,
-         "obf_fld_research": null,
-         "obf_fld_more": null,
-         "obf_fld_listmore": null,
-         "obf_fld_researchreq": null,
-         "obf_fld_dfault": null,
-         "obf_field_id__fld_dfault": null,
-         "obf_area_id__ofa_name": "IcrA-1",
-         "obf_area_id__ofa_position": 1,
-         "row_module_id__mdl_name": "Inhecryptance"
-        },
-        "links": [{
-         "object": "Field",
-         "label": "Field",
-         "icon": "img/system/field",
-         "field": "",
-         "list": [{
+     "links": [
+      {
+       "object": "ObjectFieldSystem",
+       "label": "Object fields",
+       "icon": "img/system/object_field",
+       "field": "obf_object_id",
+       "list": [
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "IcrA~icrAFieldA1~10",
+         "item": {
+          "obf_object_id__obo_name": "IcrA",
+          "obf_field_id__fld_name": "icrAFieldA1",
+          "obf_field_id__fld_type": "3",
+          "obf_order": 10,
+          "obf_group_by": null,
+          "obf_dfault_order": 1,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": null,
+          "obf_ref_object_id__obo_name": null,
+          "obf_cascad": null,
+          "obf_card": null,
+          "obf_visible": null,
+          "obf_ref_export": true,
+          "obf_copy": null,
+          "obf_ref_order": null,
+          "obf_fld_visible": null,
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": null,
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": null,
+          "obf_area_id__ofa_name": "IcrA-1",
+          "obf_area_id__ofa_position": 1,
+          "row_module_id__mdl_name": "Inhecryptance"
+         },
+         "links": [{
           "object": "Field",
-          "userkey": "icrAFieldA1",
-          "item": {
-           "fld_name": "icrAFieldA1",
-           "fld_dbname": "icr_a_field_a1",
-           "fld_visible": "3",
-           "fld_updatable": "1",
-           "fld_required": true,
-           "fld_fonctid": true,
-           "fld_research": "1",
-           "fld_researchreq": "0",
-           "fld_sort": "C",
-           "fld_more": false,
-           "fld_listmore": false,
-           "fld_listsum": null,
-           "fld_tray": null,
-           "fld_type": "3",
-           "fld_type_id__flt_code": null,
-           "fld_list_id__lov_name": null,
-           "fld_copy": true,
-           "fld_size": 255,
-           "fld_minsize": null,
-           "fld_precision": null,
-           "fld_fromdate_id__fld_name": null,
-           "fld_dfault": null,
-           "fld_indexable": false,
-           "fld_autocomp": "0",
-           "fld_groupby": false,
-           "fld_updall": true,
-           "fld_case": null,
-           "fld_righttoleft": false,
-           "fld_rendering": null,
-           "fld_speech": null,
-           "fld_calc": null,
-           "fld_objlist": null,
-           "fld_comment": null,
-           "fld_classification": null,
-           "row_module_id__mdl_name": "Inhecryptance"
-          },
-          "links": [{
-           "object": "TranslateField",
-           "label": "Field translation",
-           "icon": "img/system/translation",
-           "field": "tsl_id",
-           "list": [
-            {
-             "object": "TranslateField",
-             "userkey": "F~icrAFieldA1~ENU",
-             "item": {
-              "tsl_typeField": "F",
-              "tsl_id__fld_name": "icrAFieldA1",
-              "tsl_lang": "ENU",
-              "tsl_value": "Field A1",
-              "tsl_simplehelp": null,
-              "tsl_short_value": null,
-              "tsl_placeholder": null,
-              "tsl_listhelp": null,
-              "row_module_id__mdl_name": "Inhecryptance",
-              "tsl_tooltip": null
+          "label": "Field",
+          "icon": "img/system/field",
+          "field": "",
+          "list": [{
+           "object": "Field",
+           "userkey": "icrAFieldA1",
+           "item": {
+            "fld_name": "icrAFieldA1",
+            "fld_dbname": "icr_a_field_a1",
+            "fld_visible": "3",
+            "fld_updatable": "1",
+            "fld_required": true,
+            "fld_fonctid": true,
+            "fld_research": "1",
+            "fld_researchreq": "0",
+            "fld_sort": "C",
+            "fld_more": false,
+            "fld_listmore": false,
+            "fld_listsum": null,
+            "fld_tray": null,
+            "fld_type": "3",
+            "fld_type_id__flt_code": null,
+            "fld_list_id__lov_name": null,
+            "fld_copy": true,
+            "fld_size": 255,
+            "fld_minsize": null,
+            "fld_precision": null,
+            "fld_fromdate_id__fld_name": null,
+            "fld_dfault": null,
+            "fld_indexable": false,
+            "fld_autocomp": "0",
+            "fld_groupby": false,
+            "fld_updall": true,
+            "fld_case": null,
+            "fld_righttoleft": false,
+            "fld_rendering": null,
+            "fld_speech": null,
+            "fld_calc": null,
+            "fld_objlist": null,
+            "fld_comment": null,
+            "fld_classification": null,
+            "row_module_id__mdl_name": "Inhecryptance"
+           },
+           "links": [{
+            "object": "TranslateField",
+            "label": "Field translation",
+            "icon": "img/system/translation",
+            "field": "tsl_id",
+            "list": [
+             {
+              "object": "TranslateField",
+              "userkey": "F~icrAFieldA1~ENU",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "icrAFieldA1",
+               "tsl_lang": "ENU",
+               "tsl_value": "Field A1",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Inhecryptance",
+               "tsl_tooltip": null
+              }
+             },
+             {
+              "object": "TranslateField",
+              "userkey": "F~icrAFieldA1~FRA",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "icrAFieldA1",
+               "tsl_lang": "FRA",
+               "tsl_value": "Icr Afield A1",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Inhecryptance",
+               "tsl_tooltip": null
+              }
              }
-            },
-            {
-             "object": "TranslateField",
-             "userkey": "F~icrAFieldA1~FRA",
-             "item": {
-              "tsl_typeField": "F",
-              "tsl_id__fld_name": "icrAFieldA1",
-              "tsl_lang": "FRA",
-              "tsl_value": "Icr Afield A1",
-              "tsl_simplehelp": null,
-              "tsl_short_value": null,
-              "tsl_placeholder": null,
-              "tsl_listhelp": null,
-              "row_module_id__mdl_name": "Inhecryptance",
-              "tsl_tooltip": null
-             }
-            }
-           ]
+            ]
+           }]
           }]
          }]
-        }]
-       },
-       {
-        "object": "ObjectFieldSystem",
-        "userkey": "IcrA~icrAFieldA2~20",
-        "item": {
-         "obf_object_id__obo_name": "IcrA",
-         "obf_field_id__fld_name": "icrAFieldA2",
-         "obf_field_id__fld_type": "3",
-         "obf_order": 20,
-         "obf_group_by": null,
-         "obf_dfault_order": null,
-         "obf_input": null,
-         "obf_ref_field_id__fld_name": null,
-         "obf_ref_object_id__obo_name": null,
-         "obf_cascad": null,
-         "obf_card": null,
-         "obf_visible": null,
-         "obf_ref_export": true,
-         "obf_copy": null,
-         "obf_ref_order": null,
-         "obf_fld_visible": null,
-         "obf_fld_required": null,
-         "obf_fld_updatable": null,
-         "obf_fld_research": null,
-         "obf_fld_more": null,
-         "obf_fld_listmore": null,
-         "obf_fld_researchreq": null,
-         "obf_fld_dfault": null,
-         "obf_field_id__fld_dfault": null,
-         "obf_area_id__ofa_name": "IcrA-1",
-         "obf_area_id__ofa_position": 1,
-         "row_module_id__mdl_name": "Inhecryptance"
         },
-        "links": [{
-         "object": "Field",
-         "label": "Field",
-         "icon": "img/system/field",
-         "field": "",
-         "list": [{
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "IcrA~icrAFieldA2~20",
+         "item": {
+          "obf_object_id__obo_name": "IcrA",
+          "obf_field_id__fld_name": "icrAFieldA2",
+          "obf_field_id__fld_type": "3",
+          "obf_order": 20,
+          "obf_group_by": null,
+          "obf_dfault_order": null,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": null,
+          "obf_ref_object_id__obo_name": null,
+          "obf_cascad": null,
+          "obf_card": null,
+          "obf_visible": null,
+          "obf_ref_export": true,
+          "obf_copy": null,
+          "obf_ref_order": null,
+          "obf_fld_visible": null,
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": null,
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": null,
+          "obf_area_id__ofa_name": "IcrA-1",
+          "obf_area_id__ofa_position": 1,
+          "row_module_id__mdl_name": "Inhecryptance"
+         },
+         "links": [{
           "object": "Field",
-          "userkey": "icrAFieldA2",
-          "item": {
-           "fld_name": "icrAFieldA2",
-           "fld_dbname": "icr_a_field_a2",
-           "fld_visible": "3",
-           "fld_updatable": "1",
-           "fld_required": false,
-           "fld_fonctid": false,
-           "fld_research": "1",
-           "fld_researchreq": "0",
-           "fld_sort": "C",
-           "fld_more": false,
-           "fld_listmore": false,
-           "fld_listsum": null,
-           "fld_tray": null,
-           "fld_type": "3",
-           "fld_type_id__flt_code": null,
-           "fld_list_id__lov_name": null,
-           "fld_copy": true,
-           "fld_size": 255,
-           "fld_minsize": null,
-           "fld_precision": null,
-           "fld_fromdate_id__fld_name": null,
-           "fld_dfault": null,
-           "fld_indexable": false,
-           "fld_autocomp": "0",
-           "fld_groupby": false,
-           "fld_updall": true,
-           "fld_case": null,
-           "fld_righttoleft": false,
-           "fld_rendering": null,
-           "fld_speech": null,
-           "fld_calc": null,
-           "fld_objlist": null,
-           "fld_comment": null,
-           "fld_classification": "CONFIDENTIAL",
-           "row_module_id__mdl_name": "Inhecryptance"
-          },
-          "links": [{
-           "object": "TranslateField",
-           "label": "Field translation",
-           "icon": "img/system/translation",
-           "field": "tsl_id",
-           "list": [
-            {
-             "object": "TranslateField",
-             "userkey": "F~icrAFieldA2~ENU",
-             "item": {
-              "tsl_typeField": "F",
-              "tsl_id__fld_name": "icrAFieldA2",
-              "tsl_lang": "ENU",
-              "tsl_value": "Field A2",
-              "tsl_simplehelp": null,
-              "tsl_short_value": null,
-              "tsl_placeholder": null,
-              "tsl_listhelp": null,
-              "row_module_id__mdl_name": "Inhecryptance",
-              "tsl_tooltip": null
+          "label": "Field",
+          "icon": "img/system/field",
+          "field": "",
+          "list": [{
+           "object": "Field",
+           "userkey": "icrAFieldA2",
+           "item": {
+            "fld_name": "icrAFieldA2",
+            "fld_dbname": "icr_a_field_a2",
+            "fld_visible": "3",
+            "fld_updatable": "1",
+            "fld_required": false,
+            "fld_fonctid": false,
+            "fld_research": "1",
+            "fld_researchreq": "0",
+            "fld_sort": "C",
+            "fld_more": false,
+            "fld_listmore": false,
+            "fld_listsum": null,
+            "fld_tray": null,
+            "fld_type": "3",
+            "fld_type_id__flt_code": null,
+            "fld_list_id__lov_name": null,
+            "fld_copy": true,
+            "fld_size": 255,
+            "fld_minsize": null,
+            "fld_precision": null,
+            "fld_fromdate_id__fld_name": null,
+            "fld_dfault": null,
+            "fld_indexable": false,
+            "fld_autocomp": "0",
+            "fld_groupby": false,
+            "fld_updall": true,
+            "fld_case": null,
+            "fld_righttoleft": false,
+            "fld_rendering": null,
+            "fld_speech": null,
+            "fld_calc": null,
+            "fld_objlist": null,
+            "fld_comment": null,
+            "fld_classification": "CONFIDENTIAL",
+            "row_module_id__mdl_name": "Inhecryptance"
+           },
+           "links": [{
+            "object": "TranslateField",
+            "label": "Field translation",
+            "icon": "img/system/translation",
+            "field": "tsl_id",
+            "list": [
+             {
+              "object": "TranslateField",
+              "userkey": "F~icrAFieldA2~ENU",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "icrAFieldA2",
+               "tsl_lang": "ENU",
+               "tsl_value": "Field A2",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Inhecryptance",
+               "tsl_tooltip": null
+              }
+             },
+             {
+              "object": "TranslateField",
+              "userkey": "F~icrAFieldA2~FRA",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "icrAFieldA2",
+               "tsl_lang": "FRA",
+               "tsl_value": "Field A2",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Inhecryptance",
+               "tsl_tooltip": null
+              }
              }
-            },
-            {
-             "object": "TranslateField",
-             "userkey": "F~icrAFieldA2~FRA",
-             "item": {
-              "tsl_typeField": "F",
-              "tsl_id__fld_name": "icrAFieldA2",
-              "tsl_lang": "FRA",
-              "tsl_value": "Field A2",
-              "tsl_simplehelp": null,
-              "tsl_short_value": null,
-              "tsl_placeholder": null,
-              "tsl_listhelp": null,
-              "row_module_id__mdl_name": "Inhecryptance",
-              "tsl_tooltip": null
-             }
-            }
-           ]
+            ]
+           }]
           }]
          }]
-        }]
-       },
-       {
-        "object": "ObjectFieldSystem",
-        "userkey": "IcrA~icrAFieldA3~30",
-        "item": {
-         "obf_object_id__obo_name": "IcrA",
-         "obf_field_id__fld_name": "icrAFieldA3",
-         "obf_field_id__fld_type": "3",
-         "obf_order": 30,
-         "obf_group_by": null,
-         "obf_dfault_order": null,
-         "obf_input": null,
-         "obf_ref_field_id__fld_name": null,
-         "obf_ref_object_id__obo_name": null,
-         "obf_cascad": null,
-         "obf_card": null,
-         "obf_visible": null,
-         "obf_ref_export": true,
-         "obf_copy": null,
-         "obf_ref_order": null,
-         "obf_fld_visible": null,
-         "obf_fld_required": null,
-         "obf_fld_updatable": null,
-         "obf_fld_research": null,
-         "obf_fld_more": null,
-         "obf_fld_listmore": null,
-         "obf_fld_researchreq": null,
-         "obf_fld_dfault": null,
-         "obf_field_id__fld_dfault": null,
-         "obf_area_id__ofa_name": "IcrA-1",
-         "obf_area_id__ofa_position": 1,
-         "row_module_id__mdl_name": "Inhecryptance"
         },
-        "links": [{
-         "object": "Field",
-         "label": "Field",
-         "icon": "img/system/field",
-         "field": "",
-         "list": [{
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "IcrA~icrAFieldA3~30",
+         "item": {
+          "obf_object_id__obo_name": "IcrA",
+          "obf_field_id__fld_name": "icrAFieldA3",
+          "obf_field_id__fld_type": "3",
+          "obf_order": 30,
+          "obf_group_by": null,
+          "obf_dfault_order": null,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": null,
+          "obf_ref_object_id__obo_name": null,
+          "obf_cascad": null,
+          "obf_card": null,
+          "obf_visible": null,
+          "obf_ref_export": true,
+          "obf_copy": null,
+          "obf_ref_order": null,
+          "obf_fld_visible": null,
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": null,
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": null,
+          "obf_area_id__ofa_name": "IcrA-1",
+          "obf_area_id__ofa_position": 1,
+          "row_module_id__mdl_name": "Inhecryptance"
+         },
+         "links": [{
           "object": "Field",
-          "userkey": "icrAFieldA3",
-          "item": {
-           "fld_name": "icrAFieldA3",
-           "fld_dbname": "icr_a_field_a3",
-           "fld_visible": "3",
-           "fld_updatable": "1",
-           "fld_required": false,
-           "fld_fonctid": false,
-           "fld_research": "1",
-           "fld_researchreq": "0",
-           "fld_sort": "C",
-           "fld_more": false,
-           "fld_listmore": false,
-           "fld_listsum": null,
-           "fld_tray": null,
-           "fld_type": "3",
-           "fld_type_id__flt_code": null,
-           "fld_list_id__lov_name": null,
-           "fld_copy": true,
-           "fld_size": 255,
-           "fld_minsize": null,
-           "fld_precision": null,
-           "fld_fromdate_id__fld_name": null,
-           "fld_dfault": null,
-           "fld_indexable": false,
-           "fld_autocomp": "0",
-           "fld_groupby": false,
-           "fld_updall": true,
-           "fld_case": null,
-           "fld_righttoleft": false,
-           "fld_rendering": null,
-           "fld_speech": null,
-           "fld_calc": null,
-           "fld_objlist": null,
-           "fld_comment": null,
-           "fld_classification": "CONFIDENTIAL",
-           "row_module_id__mdl_name": "Inhecryptance"
-          },
-          "links": [{
-           "object": "TranslateField",
-           "label": "Field translation",
-           "icon": "img/system/translation",
-           "field": "tsl_id",
-           "list": [
-            {
-             "object": "TranslateField",
-             "userkey": "F~icrAFieldA3~ENU",
-             "item": {
-              "tsl_typeField": "F",
-              "tsl_id__fld_name": "icrAFieldA3",
-              "tsl_lang": "ENU",
-              "tsl_value": "Field A3",
-              "tsl_simplehelp": null,
-              "tsl_short_value": null,
-              "tsl_placeholder": null,
-              "tsl_listhelp": null,
-              "row_module_id__mdl_name": "Inhecryptance",
-              "tsl_tooltip": null
+          "label": "Field",
+          "icon": "img/system/field",
+          "field": "",
+          "list": [{
+           "object": "Field",
+           "userkey": "icrAFieldA3",
+           "item": {
+            "fld_name": "icrAFieldA3",
+            "fld_dbname": "icr_a_field_a3",
+            "fld_visible": "3",
+            "fld_updatable": "1",
+            "fld_required": false,
+            "fld_fonctid": false,
+            "fld_research": "1",
+            "fld_researchreq": "0",
+            "fld_sort": "C",
+            "fld_more": false,
+            "fld_listmore": false,
+            "fld_listsum": null,
+            "fld_tray": null,
+            "fld_type": "3",
+            "fld_type_id__flt_code": null,
+            "fld_list_id__lov_name": null,
+            "fld_copy": true,
+            "fld_size": 255,
+            "fld_minsize": null,
+            "fld_precision": null,
+            "fld_fromdate_id__fld_name": null,
+            "fld_dfault": null,
+            "fld_indexable": false,
+            "fld_autocomp": "0",
+            "fld_groupby": false,
+            "fld_updall": true,
+            "fld_case": null,
+            "fld_righttoleft": false,
+            "fld_rendering": null,
+            "fld_speech": null,
+            "fld_calc": null,
+            "fld_objlist": null,
+            "fld_comment": null,
+            "fld_classification": "CONFIDENTIAL",
+            "row_module_id__mdl_name": "Inhecryptance"
+           },
+           "links": [{
+            "object": "TranslateField",
+            "label": "Field translation",
+            "icon": "img/system/translation",
+            "field": "tsl_id",
+            "list": [
+             {
+              "object": "TranslateField",
+              "userkey": "F~icrAFieldA3~ENU",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "icrAFieldA3",
+               "tsl_lang": "ENU",
+               "tsl_value": "Field A3",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Inhecryptance",
+               "tsl_tooltip": null
+              }
+             },
+             {
+              "object": "TranslateField",
+              "userkey": "F~icrAFieldA3~FRA",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "icrAFieldA3",
+               "tsl_lang": "FRA",
+               "tsl_value": "Field A3",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Inhecryptance",
+               "tsl_tooltip": null
+              }
              }
-            },
-            {
-             "object": "TranslateField",
-             "userkey": "F~icrAFieldA3~FRA",
-             "item": {
-              "tsl_typeField": "F",
-              "tsl_id__fld_name": "icrAFieldA3",
-              "tsl_lang": "FRA",
-              "tsl_value": "Field A3",
-              "tsl_simplehelp": null,
-              "tsl_short_value": null,
-              "tsl_placeholder": null,
-              "tsl_listhelp": null,
-              "row_module_id__mdl_name": "Inhecryptance",
-              "tsl_tooltip": null
-             }
-            }
-           ]
+            ]
+           }]
           }]
          }]
-        }]
-       },
-       {
-        "object": "ObjectFieldSystem",
-        "userkey": "IcrA~icrAFieldA4~40",
-        "item": {
-         "obf_object_id__obo_name": "IcrA",
-         "obf_field_id__fld_name": "icrAFieldA4",
-         "obf_field_id__fld_type": "3",
-         "obf_order": 40,
-         "obf_group_by": null,
-         "obf_dfault_order": null,
-         "obf_input": null,
-         "obf_ref_field_id__fld_name": null,
-         "obf_ref_object_id__obo_name": null,
-         "obf_cascad": null,
-         "obf_card": null,
-         "obf_visible": null,
-         "obf_ref_export": true,
-         "obf_copy": null,
-         "obf_ref_order": null,
-         "obf_fld_visible": null,
-         "obf_fld_required": null,
-         "obf_fld_updatable": null,
-         "obf_fld_research": null,
-         "obf_fld_more": null,
-         "obf_fld_listmore": null,
-         "obf_fld_researchreq": null,
-         "obf_fld_dfault": null,
-         "obf_field_id__fld_dfault": null,
-         "obf_area_id__ofa_name": "IcrA-1",
-         "obf_area_id__ofa_position": 1,
-         "row_module_id__mdl_name": "Inhecryptance"
         },
-        "links": [{
-         "object": "Field",
-         "label": "Field",
-         "icon": "img/system/field",
-         "field": "",
-         "list": [{
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "IcrA~icrAFieldA4~40",
+         "item": {
+          "obf_object_id__obo_name": "IcrA",
+          "obf_field_id__fld_name": "icrAFieldA4",
+          "obf_field_id__fld_type": "3",
+          "obf_order": 40,
+          "obf_group_by": null,
+          "obf_dfault_order": null,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": null,
+          "obf_ref_object_id__obo_name": null,
+          "obf_cascad": null,
+          "obf_card": null,
+          "obf_visible": null,
+          "obf_ref_export": true,
+          "obf_copy": null,
+          "obf_ref_order": null,
+          "obf_fld_visible": null,
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": null,
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": null,
+          "obf_area_id__ofa_name": "IcrA-1",
+          "obf_area_id__ofa_position": 1,
+          "row_module_id__mdl_name": "Inhecryptance"
+         },
+         "links": [{
           "object": "Field",
-          "userkey": "icrAFieldA4",
-          "item": {
-           "fld_name": "icrAFieldA4",
-           "fld_dbname": "icr_a_field_a4",
-           "fld_visible": "3",
-           "fld_updatable": "1",
-           "fld_required": false,
-           "fld_fonctid": false,
-           "fld_research": "1",
-           "fld_researchreq": "0",
-           "fld_sort": "C",
-           "fld_more": false,
-           "fld_listmore": false,
-           "fld_listsum": null,
-           "fld_tray": null,
-           "fld_type": "3",
-           "fld_type_id__flt_code": null,
-           "fld_list_id__lov_name": null,
-           "fld_copy": true,
-           "fld_size": 255,
-           "fld_minsize": null,
-           "fld_precision": null,
-           "fld_fromdate_id__fld_name": null,
-           "fld_dfault": null,
-           "fld_indexable": false,
-           "fld_autocomp": "0",
-           "fld_groupby": false,
-           "fld_updall": true,
-           "fld_case": null,
-           "fld_righttoleft": false,
-           "fld_rendering": null,
-           "fld_speech": null,
-           "fld_calc": null,
-           "fld_objlist": null,
-           "fld_comment": null,
-           "fld_classification": "CONFIDENTIAL",
-           "row_module_id__mdl_name": "Inhecryptance"
-          },
-          "links": [{
-           "object": "TranslateField",
-           "label": "Field translation",
-           "icon": "img/system/translation",
-           "field": "tsl_id",
-           "list": [
-            {
-             "object": "TranslateField",
-             "userkey": "F~icrAFieldA4~ENU",
-             "item": {
-              "tsl_typeField": "F",
-              "tsl_id__fld_name": "icrAFieldA4",
-              "tsl_lang": "ENU",
-              "tsl_value": "Field A4",
-              "tsl_simplehelp": null,
-              "tsl_short_value": null,
-              "tsl_placeholder": null,
-              "tsl_listhelp": null,
-              "row_module_id__mdl_name": "Inhecryptance",
-              "tsl_tooltip": null
+          "label": "Field",
+          "icon": "img/system/field",
+          "field": "",
+          "list": [{
+           "object": "Field",
+           "userkey": "icrAFieldA4",
+           "item": {
+            "fld_name": "icrAFieldA4",
+            "fld_dbname": "icr_a_field_a4",
+            "fld_visible": "3",
+            "fld_updatable": "1",
+            "fld_required": false,
+            "fld_fonctid": false,
+            "fld_research": "1",
+            "fld_researchreq": "0",
+            "fld_sort": "C",
+            "fld_more": false,
+            "fld_listmore": false,
+            "fld_listsum": null,
+            "fld_tray": null,
+            "fld_type": "3",
+            "fld_type_id__flt_code": null,
+            "fld_list_id__lov_name": null,
+            "fld_copy": true,
+            "fld_size": 255,
+            "fld_minsize": null,
+            "fld_precision": null,
+            "fld_fromdate_id__fld_name": null,
+            "fld_dfault": null,
+            "fld_indexable": false,
+            "fld_autocomp": "0",
+            "fld_groupby": false,
+            "fld_updall": true,
+            "fld_case": null,
+            "fld_righttoleft": false,
+            "fld_rendering": null,
+            "fld_speech": null,
+            "fld_calc": null,
+            "fld_objlist": null,
+            "fld_comment": null,
+            "fld_classification": "CONFIDENTIAL",
+            "row_module_id__mdl_name": "Inhecryptance"
+           },
+           "links": [{
+            "object": "TranslateField",
+            "label": "Field translation",
+            "icon": "img/system/translation",
+            "field": "tsl_id",
+            "list": [
+             {
+              "object": "TranslateField",
+              "userkey": "F~icrAFieldA4~ENU",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "icrAFieldA4",
+               "tsl_lang": "ENU",
+               "tsl_value": "Field A4",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Inhecryptance",
+               "tsl_tooltip": null
+              }
+             },
+             {
+              "object": "TranslateField",
+              "userkey": "F~icrAFieldA4~FRA",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "icrAFieldA4",
+               "tsl_lang": "FRA",
+               "tsl_value": "Field A4",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Inhecryptance",
+               "tsl_tooltip": null
+              }
              }
-            },
-            {
-             "object": "TranslateField",
-             "userkey": "F~icrAFieldA4~FRA",
-             "item": {
-              "tsl_typeField": "F",
-              "tsl_id__fld_name": "icrAFieldA4",
-              "tsl_lang": "FRA",
-              "tsl_value": "Field A4",
-              "tsl_simplehelp": null,
-              "tsl_short_value": null,
-              "tsl_placeholder": null,
-              "tsl_listhelp": null,
-              "row_module_id__mdl_name": "Inhecryptance",
-              "tsl_tooltip": null
-             }
-            }
-           ]
+            ]
+           }]
           }]
          }]
-        }]
-       }
-      ]
-     },
-     {
-      "object": "Function",
-      "label": "Function",
-      "icon": "img/system/function",
-      "field": "fct_object_id",
-      "list": [
-       {
-        "object": "Function",
-        "userkey": "ICR_A_CRUD",
-        "item": {
-         "fct_name": "ICR_A_CRUD",
-         "fct_object_id__obj_type": "O",
-         "fct_object_id__obj_name": "IcrA",
-         "fct_function": "CMS",
-         "fct_action_id__act_name": null,
-         "fct_view_id__viw_name": null,
-         "row_module_id__mdl_name": "Inhecryptance"
-        },
-        "links": [{
-         "object": "Grant",
-         "label": "Grant",
-         "icon": "img/system/grant",
-         "field": "grt_function_id",
-         "list": [{
-          "object": "Grant",
-          "userkey": "ICR_ADMIN~ICR_A_CRUD~IcrA~",
-          "item": {
-           "grt_group_id__grp_name": "ICR_ADMIN",
-           "grt_function_id__fct_name": "ICR_A_CRUD",
-           "grt_function_id__fct_object_id__obj_type": "O",
-           "grt_function_id__fct_object_id__obj_name": "IcrA",
-           "grt_function_id__fct_action_id__act_name": null,
-           "grt_function_id__fct_function": "CMS",
-           "grt_activ": true,
-           "row_module_id__mdl_name": "Inhecryptance"
-          }
-         }]
-        }]
-       },
-       {
-        "object": "Function",
-        "userkey": "ICR_A_R",
-        "item": {
-         "fct_name": "ICR_A_R",
-         "fct_object_id__obj_type": "O",
-         "fct_object_id__obj_name": "IcrA",
-         "fct_function": "L",
-         "fct_action_id__act_name": null,
-         "fct_view_id__viw_name": null,
-         "row_module_id__mdl_name": "Inhecryptance"
         }
-       }
-      ]
-     }
-    ]
-   }]
+       ]
+      },
+      {
+       "object": "Function",
+       "label": "Function",
+       "icon": "img/system/function",
+       "field": "fct_object_id",
+       "list": [
+        {
+         "object": "Function",
+         "userkey": "ICR_A_CRUD",
+         "item": {
+          "fct_name": "ICR_A_CRUD",
+          "fct_object_id__obj_type": "O",
+          "fct_object_id__obj_name": "IcrA",
+          "fct_function": "CMS",
+          "fct_action_id__act_name": null,
+          "fct_view_id__viw_name": null,
+          "row_module_id__mdl_name": "Inhecryptance"
+         },
+         "links": [{
+          "object": "Grant",
+          "label": "Grant",
+          "icon": "img/system/grant",
+          "field": "grt_function_id",
+          "list": [{
+           "object": "Grant",
+           "userkey": "ICR_ADMIN~ICR_A_CRUD~IcrA~",
+           "item": {
+            "grt_group_id__grp_name": "ICR_ADMIN",
+            "grt_function_id__fct_name": "ICR_A_CRUD",
+            "grt_function_id__fct_object_id__obj_type": "O",
+            "grt_function_id__fct_object_id__obj_name": "IcrA",
+            "grt_function_id__fct_action_id__act_name": null,
+            "grt_function_id__fct_function": "CMS",
+            "grt_activ": true,
+            "row_module_id__mdl_name": "Inhecryptance"
+           }
+          }]
+         }]
+        },
+        {
+         "object": "Function",
+         "userkey": "ICR_A_R",
+         "item": {
+          "fct_name": "ICR_A_R",
+          "fct_object_id__obj_type": "O",
+          "fct_object_id__obj_name": "IcrA",
+          "fct_function": "L",
+          "fct_action_id__act_name": null,
+          "fct_view_id__viw_name": null,
+          "row_module_id__mdl_name": "Inhecryptance"
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "object": "ObjectInternal",
+     "userkey": "IcrB",
+     "item": {
+      "obo_name": "IcrB",
+      "obo_dbtable": "icr_a",
+      "obo_role": "OBJ",
+      "obo_class": null,
+      "obo_script_id": null,
+      "obo_usets": "1",
+      "obo_nosearch": "1",
+      "obo_comment": null,
+      "obo_type": "O",
+      "obo_searchspec": null,
+      "obo_delspec": null,
+      "obo_exportorder": null,
+      "obo_distinct": false,
+      "obo_indexable": false,
+      "obo_groupby": false,
+      "obo_dfltref": null,
+      "obo_template_id__tpl_name": "IcrB",
+      "obo_cache": "D",
+      "obo_copy": true,
+      "obo_export": true,
+      "obo_pagine": true,
+      "obo_srh_predef": ["1"],
+      "obo_selrow": true,
+      "obo_updall": true,
+      "obo_delall": true,
+      "obo_listsearch": true,
+      "obo_list_edit": [
+       "N",
+       "L",
+       "E"
+      ],
+      "obo_useform": true,
+      "obo_title": null,
+      "obo_icon": null,
+      "obo_refcount": false,
+      "obo_tree": false,
+      "obo_viewmode": "T",
+      "obo_historic": null,
+      "obo_printable": true,
+      "obo_followlink": true,
+      "obo_mergeable": false,
+      "obo_social": ["1"],
+      "obo_rowid_id__fld_name": null,
+      "obo_extend_id__obj_name": "IcrA",
+      "row_module_id__mdl_name": "Inhecryptance",
+      "obo_btn_reload": "P",
+      "obo_btn_prefs": "P",
+      "obo_btn_del": "P",
+      "obo_btn_copy": "P",
+      "obo_btn_export": "P",
+      "obo_btn_listadd": "1",
+      "obo_btn_listedit": "1",
+      "obo_btn_listupsert": "1",
+      "obo_btn_updall": "P",
+      "obo_btn_delall": "P",
+      "obo_btn_merge": "P",
+      "obo_btn_save": true,
+      "obo_btn_saveclose": true,
+      "obo_btn_savenew": true,
+      "obo_btn_savecopy": true,
+      "obo_btn_close": true,
+      "obo_tray": true,
+      "obo_dashboard": true,
+      "obo_prefix": "b",
+      "obo_search_ts": null,
+      "obo_minrows": null,
+      "obo_maxrows": null,
+      "obo_sortable": true,
+      "obo_list_areas": true
+     },
+     "links": [
+      {
+       "object": "ObjectFieldSystem",
+       "label": "Object fields",
+       "icon": "img/system/object_field",
+       "field": "obf_object_id",
+       "list": [
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "IcrB~icrBFieldB1~10",
+         "item": {
+          "obf_object_id__obo_name": "IcrB",
+          "obf_field_id__fld_name": "icrBFieldB1",
+          "obf_field_id__fld_type": "3",
+          "obf_order": 10,
+          "obf_group_by": null,
+          "obf_dfault_order": null,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": null,
+          "obf_ref_object_id__obo_name": null,
+          "obf_cascad": null,
+          "obf_card": null,
+          "obf_visible": null,
+          "obf_ref_export": true,
+          "obf_copy": null,
+          "obf_ref_order": null,
+          "obf_fld_visible": null,
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": null,
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": null,
+          "obf_area_id__ofa_name": "IcrB-2",
+          "obf_area_id__ofa_position": 2,
+          "row_module_id__mdl_name": "Inhecryptance"
+         },
+         "links": [{
+          "object": "Field",
+          "label": "Field",
+          "icon": "img/system/field",
+          "field": "",
+          "list": [{
+           "object": "Field",
+           "userkey": "icrBFieldB1",
+           "item": {
+            "fld_name": "icrBFieldB1",
+            "fld_dbname": "icr_b_field_b1",
+            "fld_visible": "3",
+            "fld_updatable": "1",
+            "fld_required": false,
+            "fld_fonctid": false,
+            "fld_research": "1",
+            "fld_researchreq": "0",
+            "fld_sort": "C",
+            "fld_more": false,
+            "fld_listmore": false,
+            "fld_listsum": null,
+            "fld_tray": null,
+            "fld_type": "3",
+            "fld_type_id__flt_code": null,
+            "fld_list_id__lov_name": null,
+            "fld_copy": true,
+            "fld_size": 255,
+            "fld_minsize": null,
+            "fld_precision": null,
+            "fld_fromdate_id__fld_name": null,
+            "fld_dfault": null,
+            "fld_indexable": false,
+            "fld_autocomp": "0",
+            "fld_groupby": false,
+            "fld_updall": true,
+            "fld_case": null,
+            "fld_righttoleft": false,
+            "fld_rendering": null,
+            "fld_speech": null,
+            "fld_calc": null,
+            "fld_objlist": null,
+            "fld_comment": null,
+            "fld_classification": null,
+            "row_module_id__mdl_name": "Inhecryptance"
+           },
+           "links": [{
+            "object": "TranslateField",
+            "label": "Field translation",
+            "icon": "img/system/translation",
+            "field": "tsl_id",
+            "list": [
+             {
+              "object": "TranslateField",
+              "userkey": "F~icrBFieldB1~ENU",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "icrBFieldB1",
+               "tsl_lang": "ENU",
+               "tsl_value": "Field B1",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Inhecryptance",
+               "tsl_tooltip": null
+              }
+             },
+             {
+              "object": "TranslateField",
+              "userkey": "F~icrBFieldB1~FRA",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "icrBFieldB1",
+               "tsl_lang": "FRA",
+               "tsl_value": "Field B1",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Inhecryptance",
+               "tsl_tooltip": null
+              }
+             }
+            ]
+           }]
+          }]
+         }]
+        },
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "IcrB~icrBFieldB2~20",
+         "item": {
+          "obf_object_id__obo_name": "IcrB",
+          "obf_field_id__fld_name": "icrBFieldB2",
+          "obf_field_id__fld_type": "3",
+          "obf_order": 20,
+          "obf_group_by": null,
+          "obf_dfault_order": null,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": null,
+          "obf_ref_object_id__obo_name": null,
+          "obf_cascad": null,
+          "obf_card": null,
+          "obf_visible": null,
+          "obf_ref_export": true,
+          "obf_copy": null,
+          "obf_ref_order": null,
+          "obf_fld_visible": null,
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": null,
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": null,
+          "obf_area_id__ofa_name": "IcrB-2",
+          "obf_area_id__ofa_position": 2,
+          "row_module_id__mdl_name": "Inhecryptance"
+         },
+         "links": [{
+          "object": "Field",
+          "label": "Field",
+          "icon": "img/system/field",
+          "field": "",
+          "list": [{
+           "object": "Field",
+           "userkey": "icrBFieldB2",
+           "item": {
+            "fld_name": "icrBFieldB2",
+            "fld_dbname": "icr_b_field_b2",
+            "fld_visible": "3",
+            "fld_updatable": "1",
+            "fld_required": false,
+            "fld_fonctid": false,
+            "fld_research": "1",
+            "fld_researchreq": "0",
+            "fld_sort": "C",
+            "fld_more": false,
+            "fld_listmore": false,
+            "fld_listsum": null,
+            "fld_tray": null,
+            "fld_type": "3",
+            "fld_type_id__flt_code": null,
+            "fld_list_id__lov_name": null,
+            "fld_copy": true,
+            "fld_size": 255,
+            "fld_minsize": null,
+            "fld_precision": null,
+            "fld_fromdate_id__fld_name": null,
+            "fld_dfault": null,
+            "fld_indexable": false,
+            "fld_autocomp": "0",
+            "fld_groupby": false,
+            "fld_updall": true,
+            "fld_case": null,
+            "fld_righttoleft": false,
+            "fld_rendering": null,
+            "fld_speech": null,
+            "fld_calc": null,
+            "fld_objlist": null,
+            "fld_comment": null,
+            "fld_classification": null,
+            "row_module_id__mdl_name": "Inhecryptance"
+           },
+           "links": [{
+            "object": "TranslateField",
+            "label": "Field translation",
+            "icon": "img/system/translation",
+            "field": "tsl_id",
+            "list": [
+             {
+              "object": "TranslateField",
+              "userkey": "F~icrBFieldB2~ENU",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "icrBFieldB2",
+               "tsl_lang": "ENU",
+               "tsl_value": "Field B2",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Inhecryptance",
+               "tsl_tooltip": null
+              }
+             },
+             {
+              "object": "TranslateField",
+              "userkey": "F~icrBFieldB2~FRA",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "icrBFieldB2",
+               "tsl_lang": "FRA",
+               "tsl_value": "Field B2",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Inhecryptance",
+               "tsl_tooltip": null
+              }
+             }
+            ]
+           }]
+          }]
+         }]
+        },
+        {
+         "object": "ObjectFieldSystem",
+         "userkey": "IcrB~icrBFieldB3~30",
+         "item": {
+          "obf_object_id__obo_name": "IcrB",
+          "obf_field_id__fld_name": "icrBFieldB3",
+          "obf_field_id__fld_type": "3",
+          "obf_order": 30,
+          "obf_group_by": null,
+          "obf_dfault_order": null,
+          "obf_input": null,
+          "obf_ref_field_id__fld_name": null,
+          "obf_ref_object_id__obo_name": null,
+          "obf_cascad": null,
+          "obf_card": null,
+          "obf_visible": null,
+          "obf_ref_export": true,
+          "obf_copy": null,
+          "obf_ref_order": null,
+          "obf_fld_visible": null,
+          "obf_fld_required": null,
+          "obf_fld_updatable": null,
+          "obf_fld_research": null,
+          "obf_fld_more": null,
+          "obf_fld_listmore": null,
+          "obf_fld_researchreq": null,
+          "obf_fld_dfault": null,
+          "obf_field_id__fld_dfault": null,
+          "obf_area_id__ofa_name": "IcrB-2",
+          "obf_area_id__ofa_position": 2,
+          "row_module_id__mdl_name": "Inhecryptance"
+         },
+         "links": [{
+          "object": "Field",
+          "label": "Field",
+          "icon": "img/system/field",
+          "field": "",
+          "list": [{
+           "object": "Field",
+           "userkey": "icrBFieldB3",
+           "item": {
+            "fld_name": "icrBFieldB3",
+            "fld_dbname": "icr_b_field_b3",
+            "fld_visible": "3",
+            "fld_updatable": "1",
+            "fld_required": false,
+            "fld_fonctid": false,
+            "fld_research": "1",
+            "fld_researchreq": "0",
+            "fld_sort": "C",
+            "fld_more": false,
+            "fld_listmore": false,
+            "fld_listsum": null,
+            "fld_tray": null,
+            "fld_type": "3",
+            "fld_type_id__flt_code": null,
+            "fld_list_id__lov_name": null,
+            "fld_copy": true,
+            "fld_size": 255,
+            "fld_minsize": null,
+            "fld_precision": null,
+            "fld_fromdate_id__fld_name": null,
+            "fld_dfault": null,
+            "fld_indexable": false,
+            "fld_autocomp": "0",
+            "fld_groupby": false,
+            "fld_updall": true,
+            "fld_case": null,
+            "fld_righttoleft": false,
+            "fld_rendering": null,
+            "fld_speech": null,
+            "fld_calc": null,
+            "fld_objlist": null,
+            "fld_comment": null,
+            "fld_classification": null,
+            "row_module_id__mdl_name": "Inhecryptance"
+           },
+           "links": [{
+            "object": "TranslateField",
+            "label": "Field translation",
+            "icon": "img/system/translation",
+            "field": "tsl_id",
+            "list": [
+             {
+              "object": "TranslateField",
+              "userkey": "F~icrBFieldB3~ENU",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "icrBFieldB3",
+               "tsl_lang": "ENU",
+               "tsl_value": "Field B3",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Inhecryptance",
+               "tsl_tooltip": null
+              }
+             },
+             {
+              "object": "TranslateField",
+              "userkey": "F~icrBFieldB3~FRA",
+              "item": {
+               "tsl_typeField": "F",
+               "tsl_id__fld_name": "icrBFieldB3",
+               "tsl_lang": "FRA",
+               "tsl_value": "Field B3",
+               "tsl_simplehelp": null,
+               "tsl_short_value": null,
+               "tsl_placeholder": null,
+               "tsl_listhelp": null,
+               "row_module_id__mdl_name": "Inhecryptance",
+               "tsl_tooltip": null
+              }
+             }
+            ]
+           }]
+          }]
+         }]
+        }
+       ]
+      },
+      {
+       "object": "Function",
+       "label": "Function",
+       "icon": "img/system/function",
+       "field": "fct_object_id",
+       "list": [
+        {
+         "object": "Function",
+         "userkey": "ICR_B_CRUD",
+         "item": {
+          "fct_name": "ICR_B_CRUD",
+          "fct_object_id__obj_type": "O",
+          "fct_object_id__obj_name": "IcrB",
+          "fct_function": "CMS",
+          "fct_action_id__act_name": null,
+          "fct_view_id__viw_name": null,
+          "row_module_id__mdl_name": "Inhecryptance"
+         },
+         "links": [{
+          "object": "Grant",
+          "label": "Grant",
+          "icon": "img/system/grant",
+          "field": "grt_function_id",
+          "list": [{
+           "object": "Grant",
+           "userkey": "ICR_ADMIN~ICR_B_CRUD~IcrB~",
+           "item": {
+            "grt_group_id__grp_name": "ICR_ADMIN",
+            "grt_function_id__fct_name": "ICR_B_CRUD",
+            "grt_function_id__fct_object_id__obj_type": "O",
+            "grt_function_id__fct_object_id__obj_name": "IcrB",
+            "grt_function_id__fct_action_id__act_name": null,
+            "grt_function_id__fct_function": "CMS",
+            "grt_activ": true,
+            "row_module_id__mdl_name": "Inhecryptance"
+           }
+          }]
+         }]
+        },
+        {
+         "object": "Function",
+         "userkey": "ICR_B_R",
+         "item": {
+          "fct_name": "ICR_B_R",
+          "fct_object_id__obj_type": "O",
+          "fct_object_id__obj_name": "IcrB",
+          "fct_function": "L",
+          "fct_action_id__act_name": null,
+          "fct_view_id__viw_name": null,
+          "row_module_id__mdl_name": "Inhecryptance"
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
   },
   {
    "object": "Domain",
@@ -794,18 +1295,32 @@
       "label": "Main menu",
       "icon": "img/system/main_menu",
       "field": "map_domain_id",
-      "list": [{
-       "object": "Map",
-       "userkey": "IcrDomain~1000",
-       "item": {
-        "map_domain_id__obd_name": "IcrDomain",
-        "map_object_id__obj_name": "IcrA",
-        "map_process_id__pcs_name": null,
-        "map_order": 1000,
-        "map_ext": false,
-        "row_module_id__mdl_name": "Inhecryptance"
+      "list": [
+       {
+        "object": "Map",
+        "userkey": "IcrDomain~1000",
+        "item": {
+         "map_domain_id__obd_name": "IcrDomain",
+         "map_object_id__obj_name": "IcrA",
+         "map_process_id__pcs_name": null,
+         "map_order": 1000,
+         "map_ext": false,
+         "row_module_id__mdl_name": "Inhecryptance"
+        }
+       },
+       {
+        "object": "Map",
+        "userkey": "IcrDomain~1010",
+        "item": {
+         "map_domain_id__obd_name": "IcrDomain",
+         "map_object_id__obj_name": "IcrB",
+         "map_process_id__pcs_name": null,
+         "map_order": 1010,
+         "map_ext": false,
+         "row_module_id__mdl_name": "Inhecryptance"
+        }
        }
-      }]
+      ]
      }
     ]
    }]
@@ -905,65 +1420,122 @@
    "label": "Templates",
    "icon": "img/system/template",
    "field": "row_module_id",
-   "list": [{
-    "object": "Template",
-    "userkey": "IcrA",
-    "item": {
-     "tpl_name": "IcrA",
-     "tpl_ui": "<div class=\"area\" data-area=\"1\"><\/div>",
-     "tpl_min": null,
-     "tpl_image": null,
-     "row_module_id__mdl_name": "Inhecryptance"
+   "list": [
+    {
+     "object": "Template",
+     "userkey": "IcrA",
+     "item": {
+      "tpl_name": "IcrA",
+      "tpl_ui": "<div class=\"area\" data-area=\"1\"><\/div>",
+      "tpl_min": null,
+      "tpl_image": null,
+      "row_module_id__mdl_name": "Inhecryptance"
+     }
+    },
+    {
+     "object": "Template",
+     "userkey": "IcrB",
+     "item": {
+      "tpl_name": "IcrB",
+      "tpl_ui": "<div>\n  <div class=\"area\" data-area=\"1:=\"><\/div>\n  <div class=\"area\" data-area=\"2\"><\/div>\n<\/div>",
+      "tpl_min": null,
+      "tpl_image": null,
+      "row_module_id__mdl_name": "Inhecryptance"
+     }
     }
-   }]
+   ]
   },
   {
    "object": "ObjectFieldArea",
    "label": "Fields areas",
    "icon": "img/system/field_area",
    "field": "row_module_id",
-   "list": [{
-    "object": "ObjectFieldArea",
-    "userkey": "IcrA-1",
-    "item": {
-     "ofa_name": "IcrA-1",
-     "ofa_position": 1,
-     "ofa_title": false,
-     "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"icrAFieldA1\"><\/div>\n  <div class=\"field\" data-field=\"icrAFieldA2\"><\/div>\n  <div class=\"field\" data-field=\"icrAFieldA3\"><\/div>\n  <div class=\"field\" data-field=\"icrAFieldA4\"><\/div>\n<\/div>",
-     "ofa_icon": "star",
-     "row_module_id__mdl_name": "Inhecryptance"
+   "list": [
+    {
+     "object": "ObjectFieldArea",
+     "userkey": "IcrA-1",
+     "item": {
+      "ofa_name": "IcrA-1",
+      "ofa_position": 1,
+      "ofa_title": true,
+      "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"icrAFieldA1\"><\/div>\n  <div class=\"field\" data-field=\"icrAFieldA2\"><\/div>\n  <div class=\"field\" data-field=\"icrAFieldA3\"><\/div>\n  <div class=\"field\" data-field=\"icrAFieldA4\"><\/div>\n<\/div>",
+      "ofa_icon": "star",
+      "row_module_id__mdl_name": "Inhecryptance"
+     },
+     "links": [{
+      "object": "TranslateFieldArea",
+      "label": "Field area translation",
+      "icon": "img/system/translation",
+      "field": "tsl_id",
+      "list": [
+       {
+        "object": "TranslateFieldArea",
+        "userkey": "Z~IcrA-1~ENU",
+        "item": {
+         "tsl_typeFieldArea": "Z",
+         "tsl_id__ofa_name": "IcrA-1",
+         "tsl_lang": "ENU",
+         "tsl_value": "A",
+         "row_module_id__mdl_name": "Inhecryptance"
+        }
+       },
+       {
+        "object": "TranslateFieldArea",
+        "userkey": "Z~IcrA-1~FRA",
+        "item": {
+         "tsl_typeFieldArea": "Z",
+         "tsl_id__ofa_name": "IcrA-1",
+         "tsl_lang": "FRA",
+         "tsl_value": "A-1",
+         "row_module_id__mdl_name": "Inhecryptance"
+        }
+       }
+      ]
+     }]
     },
-    "links": [{
-     "object": "TranslateFieldArea",
-     "label": "Field area translation",
-     "icon": "img/system/translation",
-     "field": "tsl_id",
-     "list": [
-      {
-       "object": "TranslateFieldArea",
-       "userkey": "Z~IcrA-1~ENU",
-       "item": {
-        "tsl_typeFieldArea": "Z",
-        "tsl_id__ofa_name": "IcrA-1",
-        "tsl_lang": "ENU",
-        "tsl_value": "IcrA-1",
-        "row_module_id__mdl_name": "Inhecryptance"
+    {
+     "object": "ObjectFieldArea",
+     "userkey": "IcrB-2",
+     "item": {
+      "ofa_name": "IcrB-2",
+      "ofa_position": 2,
+      "ofa_title": true,
+      "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"icrBFieldB1\"><\/div>\n  <div class=\"field\" data-field=\"icrBFieldB2\"><\/div>\n  <div class=\"field\" data-field=\"icrBFieldB3\"><\/div>\n<\/div>",
+      "ofa_icon": "star",
+      "row_module_id__mdl_name": "Inhecryptance"
+     },
+     "links": [{
+      "object": "TranslateFieldArea",
+      "label": "Field area translation",
+      "icon": "img/system/translation",
+      "field": "tsl_id",
+      "list": [
+       {
+        "object": "TranslateFieldArea",
+        "userkey": "Z~IcrB-2~ENU",
+        "item": {
+         "tsl_typeFieldArea": "Z",
+         "tsl_id__ofa_name": "IcrB-2",
+         "tsl_lang": "ENU",
+         "tsl_value": "B",
+         "row_module_id__mdl_name": "Inhecryptance"
+        }
+       },
+       {
+        "object": "TranslateFieldArea",
+        "userkey": "Z~IcrB-2~FRA",
+        "item": {
+         "tsl_typeFieldArea": "Z",
+         "tsl_id__ofa_name": "IcrB-2",
+         "tsl_lang": "FRA",
+         "tsl_value": "B-2",
+         "row_module_id__mdl_name": "Inhecryptance"
+        }
        }
-      },
-      {
-       "object": "TranslateFieldArea",
-       "userkey": "Z~IcrA-1~FRA",
-       "item": {
-        "tsl_typeFieldArea": "Z",
-        "tsl_id__ofa_name": "IcrA-1",
-        "tsl_lang": "FRA",
-        "tsl_value": "A-1",
-        "row_module_id__mdl_name": "Inhecryptance"
-       }
-      }
-     ]
-    }]
-   }]
+      ]
+     }]
+    }
+   ]
   },
   {
    "object": "Model",
