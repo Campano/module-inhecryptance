@@ -659,27 +659,7 @@
           "fct_action_id__act_name": null,
           "fct_view_id__viw_name": null,
           "row_module_id__mdl_name": "Inhecryptance"
-         },
-         "links": [{
-          "object": "Grant",
-          "label": "Grant",
-          "icon": "img/system/grant",
-          "field": "grt_function_id",
-          "list": [{
-           "object": "Grant",
-           "userkey": "ICR_ADMIN~ICR_A_CRUD~IcrA~",
-           "item": {
-            "grt_group_id__grp_name": "ICR_ADMIN",
-            "grt_function_id__fct_name": "ICR_A_CRUD",
-            "grt_function_id__fct_object_id__obj_type": "O",
-            "grt_function_id__fct_object_id__obj_name": "IcrA",
-            "grt_function_id__fct_action_id__act_name": null,
-            "grt_function_id__fct_function": "CMS",
-            "grt_activ": true,
-            "row_module_id__mdl_name": "Inhecryptance"
-           }
-          }]
-         }]
+         }
         },
         {
          "object": "Function",
@@ -692,7 +672,27 @@
           "fct_action_id__act_name": null,
           "fct_view_id__viw_name": null,
           "row_module_id__mdl_name": "Inhecryptance"
-         }
+         },
+         "links": [{
+          "object": "Grant",
+          "label": "Grant",
+          "icon": "img/system/grant",
+          "field": "grt_function_id",
+          "list": [{
+           "object": "Grant",
+           "userkey": "ICR_ADMIN~ICR_A_R~IcrA~",
+           "item": {
+            "grt_group_id__grp_name": "ICR_ADMIN",
+            "grt_function_id__fct_name": "ICR_A_R",
+            "grt_function_id__fct_object_id__obj_type": "O",
+            "grt_function_id__fct_object_id__obj_name": "IcrA",
+            "grt_function_id__fct_action_id__act_name": null,
+            "grt_function_id__fct_function": "L",
+            "grt_activ": true,
+            "row_module_id__mdl_name": "Inhecryptance"
+           }
+          }]
+         }]
         }
        ]
       }
@@ -713,7 +713,7 @@
       "obo_type": "O",
       "obo_searchspec": "icr_b_field_b1 is not null",
       "obo_delspec": null,
-      "obo_exportorder": null,
+      "obo_exportorder": 10,
       "obo_distinct": false,
       "obo_indexable": false,
       "obo_groupby": false,
@@ -1212,7 +1212,7 @@
       "obo_type": "O",
       "obo_searchspec": "icr_c_field_c1 is not null",
       "obo_delspec": null,
-      "obo_exportorder": null,
+      "obo_exportorder": 20,
       "obo_distinct": false,
       "obo_indexable": false,
       "obo_groupby": false,
@@ -1469,7 +1469,7 @@
       "obo_type": "O",
       "obo_searchspec": "icr_d_field_d1 is not null",
       "obo_delspec": null,
-      "obo_exportorder": null,
+      "obo_exportorder": 30,
       "obo_distinct": false,
       "obo_indexable": false,
       "obo_groupby": false,
@@ -2361,6 +2361,31 @@
      },
      "scr_type": "JSR",
      "row_module_id__mdl_name": "Inhecryptance"
+    }
+   }]
+  },
+  {
+   "object": "Dataset",
+   "label": "Datasets",
+   "icon": "img/color/file",
+   "field": "row_module_id",
+   "list": [{
+    "object": "Dataset",
+    "userkey": "Inhecryptance~Inhecryptance-data-20221012163958",
+    "item": {
+     "row_module_id__mdl_name": "Inhecryptance",
+     "dt_name": "Inhecryptance-data-20221012163958",
+     "dt_file": {
+      "path": "data/Inhecryptance-data-20221012163958.zip",
+      "size": 539,
+      "field": "dt_file",
+      "mime": "application/zip",
+      "name": "Inhecryptance-data-20221012163958.zip",
+      "id": "6636",
+      "object": "Dataset",
+      "rowid": "1"
+     },
+     "dt_desc": "Created by module's data export on 2022-10-12 16:39:58"
     }
    }]
   }
